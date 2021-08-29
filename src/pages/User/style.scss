@@ -1,0 +1,29 @@
+.user-wrapper {
+  width: calc(90vw - 4vw);
+  margin: 10px auto;
+  padding: 2vw;
+  border: 1px solid lightblue;
+  border-radius: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  #back {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  h2,
+  h1 {
+    display: flex;
+    align-items: center;
+    img {
+      margin-right: 10px;
+    }
+    font-size: 16px;
+    text-overflow: ellipsis;
+  }
+  span {
+    color: gray;
+    font-size: 20px !important;
+    margin-right: 10px;
+  }
+}
