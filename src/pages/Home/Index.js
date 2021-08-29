@@ -64,9 +64,15 @@ const Home = () => {
         <div>Website</div>
       </div>
 
-      {data.slice(0 + 10 * (page - 1), 10 + 10 * (page - 1)).map((i) => {
-        return <Row key={i.id} {...i} />;
-      })}
+      {data.length !== 0 ? (
+        data.slice(0 + 10 * (page - 1), 10 + 10 * (page - 1)).map((i) => {
+          return <Row key={i.id} {...i} />;
+        })
+      ) : (
+        <center>
+          <img src='https://c.tenor.com/5o2p0tH5LFQAAAAi/hug.gif' />
+        </center>
+      )}
       <div className='paging-btns'>
         {page > 1 && (
           <button
