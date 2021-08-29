@@ -111,7 +111,7 @@ const Row = ({
     <div
       className='row-wrapper'
       onClick={(e) => {
-        window.location.href = '/user/' + id;
+        window.location.href = '/users/' + id;
       }}>
       <div>{first_name}</div>
       <div>{last_name}</div>
