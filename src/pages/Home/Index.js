@@ -1,12 +1,10 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { useHistory, useLocation } from 'react-router-dom';
 import './style.scss';
 
 const Home = () => {
   const [data, setData] = useState([]);
   const [page, setPage] = useState(1);
-  const history = useHistory();
   const getData = async () => {
     const res = await axios(
       'https://datapeace-storage.s3-us-west-2.amazonaws.com/dummy_data/users.json',
