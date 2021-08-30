@@ -70,7 +70,7 @@ const Home = () => {
         })
       ) : (
         <center>
-          <img src='https://c.tenor.com/5o2p0tH5LFQAAAAi/hug.gif' />
+          <img src='https://c.tenor.com/5o2p0tH5LFQAAAAi/hug.gif' alt='' />
         </center>
       )}
       <div className='paging-btns'>
